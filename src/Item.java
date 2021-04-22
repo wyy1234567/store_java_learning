@@ -14,4 +14,12 @@ public class Item {
         this.price = price;
         this.isOnsale = false;
     }
+
+    // return an array that tell [regularPrice, salePrice], salePrice is calculated by func in Sale Class
+    public double[] showSalePrices(int discount) {
+        double[] priceArr = new double[2];
+        priceArr[0] = price;
+        priceArr[1] = Sale.calculateSalePrice(this.price, discount);
+        return priceArr;
+    }
 }
