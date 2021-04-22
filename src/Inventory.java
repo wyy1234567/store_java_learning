@@ -12,7 +12,7 @@ public class Inventory {
 //        inventory.add(new Item("Banana", 0.1, 10, 1));
     }
 
-    public static boolean isItemInStock(Item item) {
+    public boolean isItemInStock(Item item) {
         for (Item i : inventory) {
             if (i == item) {
                 System.out.println("Item found");
@@ -23,7 +23,7 @@ public class Inventory {
         return false;
     }
 
-    public static void addItemToInventory(Item item) {
+    public void addItemToInventory(Item item) {
         inventory.add(item);
     }
 
