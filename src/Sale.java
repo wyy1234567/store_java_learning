@@ -5,7 +5,7 @@ public class Sale {
         return price * (100 - discount) / 100;
     }
 
-    // return an array of items that're on sale?
+    // return an array of items that are on sale?
 
     // some statistics? like revenue/day? cost/day?
 }
